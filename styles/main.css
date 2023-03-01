@@ -1,0 +1,199 @@
+/*****************************************************/
+/* This semester we will be using my variation of    */
+/* Josh Comeau's CSS Reset instead of normalize      */
+/* Read more at                                      */
+/* https://www.joshwcomeau.com/css/custom-css-reset/ */
+/*****************************************************/
+/* Always add your CSS below the reset CSS           */
+/*****************************************************/
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+  /* this an experimental line-height; if it breaks, add line-height: 1.5 to body */
+  line-height: calc(1em + 0.5rem);
+}
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  -webkit-font-smoothing: antialiased;
+}
+
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+/* until you get a feel for overflow, I'll keep these next two commented out */
+/* p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word;
+} */
+
+/* p {
+  overflow-wrap: break-word;
+  hyphens: auto;
+} */
+
+/* temp CSS for HTML only assignments */
+picture img {
+  width: 100%;
+}
+
+svg {
+  width: 200px;
+}
+
+/* temp fix to size about img */
+img[srcset] {
+  width: 50%;
+  height: auto;
+  margin: 2rem auto;
+}
+
+/* temporary fix to size svg images */
+img[src$="svg"] {
+  width: 200px;
+}
+
+/************ add your CSS here *****************/
+
+:root {
+  --color-font: #333;
+  --color-primary: #fefae0;
+  --color-secondary: #bc6c25;
+  --color-dark-accent: #283618;
+  --color-accent: #497030;
+  --color-accent-light: #dda15e;
+}
+
+font-family: "Istok Web", sans-serif;
+font-family: "Pacifico", cursive;
+
+color: var(--color-heading);
+
+a.button:hover {
+  color: var(--color-secondary);
+  transition: 0.7s;
+}
+a[href]:hover {
+  color: #dda15e;
+}
+.button {
+  background-color: var(--color-accent);
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  color: var(--color-secondary);
+  transition: background-color 300ms ease;
+}
+
+main {
+  margin: 0 auto;
+  padding: 0 1rem;
+  max-width: 50rem;
+}
+
+.hero h1 {
+   {
+    font-family: "pacifico", cursive;
+    color: var(--color-secondary);
+    margin: 0;
+    text-shadow: color:
+    padding-top: 5rem;
+    font-size: 4rem;
+    line-height: 1;
+  }
+}
+.hero p {
+  font-family: "Istok Web", sans-serif;
+  color: var(--color-secondary);
+  font-size: 1.5rem;
+  margin: 0;
+}
+
+.hero {
+  height: 40vh;
+  position: relative;
+}
+
+.hero .text-wrapper {
+  position: absolute;
+  inset: 0;
+  background-color: rgb(0 0 0 / 30%);
+}
+picture img {
+  height: 100%;
+  object-fit: cover;
+  object-position: left center;
+}
+
+h1 {
+  font-size: 3.5rem;
+  color: var(--color-secondary);
+  font-family: "Pacifico", cursive;
+  font-weight: 400;
+  margin-bottom: 0.5em;
+  margin-top: 1.5em;
+}
+
+h2 {
+  font-size: 2.5rem;
+  font-family: "Pacifico", cursive;
+  margin-bottom: 0.5em;
+  margin-top: 1.5em;
+}
+
+h3 {
+  font-size: 2rem;
+}
+
+p {
+  margin-bottom: 1.5rem;
+  font-family: "Istok Web", sans-serif;
+  color: var(--color-font);
+}
+
+article,
+aside {
+  margin-bottom: 6rem;
+}
+
+footer {
+  background-color: var(--color-dark-accent);
+}
+
+footer p {
+  color: var(--color-secondary);
+  margin: 0;
+  padding: 3rem 1rem 6rem;
+}
