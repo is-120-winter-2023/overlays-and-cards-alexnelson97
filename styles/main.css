@@ -221,8 +221,10 @@ footer p {
 
 .cards {
   display: flex;
+  gap: 1rem;
   padding-left: 3rem;
   padding-right: 3rem;
+  margin-bottom: 6rem;
 }
 
 .card {
@@ -231,9 +233,8 @@ footer p {
   transition: box-shadow 300ms ease;
 }
 
-.card:hover {
+a.card:hover {
   color: var(--color-secondary);
-  transition: box-shadow 300ms ease;
+  box-shadow: 4px 4px 6px #0008;
   font-family: "Istok Web", sans-serif;
-  color: var(--color-secondary);
 }
